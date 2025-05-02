@@ -214,14 +214,14 @@ const ImageGallery: React.FC = () => {
       <div className="absolute inset-0 flex flex-col items-center justify-center">
         <h1 
           ref={titleRef}
-          className="text-4xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-slate-800 text-center relative top-[56px] sm:top-[100px] md:top-[120px] lg:top-[160px]"
+          className="text-4xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-[#00213F] text-center relative top-[56px] sm:top-[100px] md:top-[120px] lg:top-[160px]"
         >
           {mainImage.title}
         </h1>
         
         <div 
           ref={mainImageRef}
-          className="relative w-full max-w-4xl h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px]  flex items-center justify-center"
+          className="relative w-full max-w-4xl h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px]  flex items-center justify-center "
         >
           <Image
             src={mainImage.src}
@@ -232,7 +232,7 @@ const ImageGallery: React.FC = () => {
             priority
           />
         </div>
-        
+        <button className="relative text-[14px] md:text-[16px] sm:-top-24 bg-blue-500 text-white p-2.5 md:p-4 cursor-pointer rounded-3xl font-semibold">Request Quote</button>
       </div>
 
       {/* Navigation Thumbnails */}
