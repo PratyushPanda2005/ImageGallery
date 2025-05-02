@@ -189,7 +189,7 @@ const ImageGallery: React.FC = () => {
     tl.to(titleRef.current, {
       opacity: 1,
       y: 0,
-      duration: 0.3,
+      duration: 1,
       ease: "power2.in"
     }, ">-0.2");
   };
@@ -208,10 +208,12 @@ const ImageGallery: React.FC = () => {
   return (
     <section 
       ref={containerRef}
-      className="min-h-screen relative overflow-hidden bg-gradient-to-b from-white to-slate-50 px-4 sm:px-6"
+      className="h-screen relative overflow-hidden bg-gradient-to-b from-white to-slate-50 px-4 sm:px-6"
     >
+     
       {/* Main Image Area */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center">
+      <div className="absolute inset-0 flex flex-col items-center justify-center bg-ye">
+      
         <h1 
           ref={titleRef}
           className="text-4xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-[#00213F] text-center relative top-[56px] sm:top-[100px] md:top-[120px] lg:top-[160px]"
